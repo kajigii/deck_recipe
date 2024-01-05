@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
-  get 'deckes/index'
-  root to: "deckes#index"
+  get 'games/index'
+  root to: "games#index"
 end

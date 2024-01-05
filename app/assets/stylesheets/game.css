@@ -1,0 +1,19 @@
+.header{
+  height: 20vh;
+  width: 100vw;
+  font-size: 30px;
+  background-color: grey;
+}
+
+.main{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.game{
+  font-size: 80px;
+}
