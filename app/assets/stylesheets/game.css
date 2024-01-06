@@ -57,7 +57,7 @@
 }
 
 
-/* battlespiritsフォルダのnewとedit */
+/* battlespiritsフォルダのnewとshowとedit */
 
 /* .deck-header{
   height: 100px;
@@ -88,19 +88,24 @@
 .deck{
   height: 100px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   text-align: center;
   background-color: green;
 }
 
-.categry{
-  height: 50px;
+.category{
   width: 150px;
+  padding: 20px;
   background-color: yellow;
 }
+
+.cards{
+  display: block;
+}
 .card{
-  height: 50px;
-  width: 250px;
+  width: 400px;
+  padding: 12px;
   background-color: yellow;
 }
 
