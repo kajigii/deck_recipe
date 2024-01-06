@@ -1,18 +1,69 @@
+<%# ↓cssの設定が終わるまでコメントアウト %>
+
 <%# タイトルをクリックするとトップページに戻る %>
-<div class="header">
-  デッキレシピ
-</div>
+<%# <div class="header">
+    デッキレシピ
+</div> %>
 
 <%# カードゲーム選択 %>
-<div class="main">
+<%# <div class="main"> %>
   <%# ヴァンガード %>
-  <div class="game">
+  <%# <div class="game"> %>
     <%# ヴァンガードのルール選択ページに遷移(vanguardフォルダのindex.html.erbへ)%>
-    Vanguard
-  </div>
+    <%# Vanguard %>
+  <%# </div> %>
   <%# バトスピ %>
-  <div class="game">
+  <%# <div class="game"> %>
     <%# バトスピの色選択ページに遷移(battlespiritsフォルダのindex.html.erbへ)%>
-    Battle Spirits
+    <%# Battle Spirits %>
+  <%# </div> %>
+<%# </div> %>
+
+
+<%#  battlespiritsフォルダのnewを作成中%>
+
+<%# タイトルをクリックするとトップページに戻る %>
+<div class="deck-header">
+  <div class="left-header">
+    デッキレシピ
+  </div>
+  <div class="right-header">
+    保存  戻る
+  </div>
+</div>
+
+<%# デッキ作成  cardを縦横2列にし「カード名：3枚」の形で保存%>
+<div class="deckes">
+<%# カテゴリの横にカード名を入力 %>
+  <div class="deck">
+    <div class="categry">
+      アルティメット  
+    </div>
+    <div class="card">
+      アルティメット・ジークフリード
+    </div>
+    <div class="card">
+      アルティメット・ジークフリーデン
+    </div>
+    <div class="card">
+      アルティメット・ジークヴルム・ノヴァ
+    </div>
+    <div class="card">
+      アルティメット・ジークヴルム・ノヴァ
+    </div>
+  </div>
+  
+    <%# <div class="card">
+      スピリット  ゴラドン3枚
+    </div>
+    <div class="card">
+      ブレイブ  
+    </div>
+    <div class="card">
+      マジック
+    </div>
+    <div class="card">
+      ネクサス
+    </div> %>
   </div>
 </div>
