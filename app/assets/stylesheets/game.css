@@ -1,3 +1,4 @@
+/* 共通 */
 .header{
   height: 20vh;
   width: 100vw;
@@ -17,3 +18,95 @@
 .game{
   font-size: 80px;
 }
+
+/* battlespiritsフォルダ */
+.deck-header{
+  height: 100px;
+  width: 100%;
+  font-size: 30px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-header{
+  padding: 20px;
+  width: 50%;
+  background-color: red;
+}
+
+.right-header{
+  padding: 20px;
+  width: 50%;
+  background-color: blue;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.colors{
+  height: 80vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+}
+
+.color{
+  font-size: 50px;
+}
+
+
+/* battlespiritsフォルダのnewとshowとedit */
+
+/* .deck-header{
+  height: 100px;
+  width: 100%;
+  font-size: 30px;
+  background-color: grey;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.left-header{
+  padding: 20px;
+  width: 50%;
+}
+
+.right-header{
+  padding: 20px;
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+} */
+
+.deckes{
+  height: 300px;
+  width: 100%;
+}
+
+.deck{
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  background-color: green;
+}
+
+.category{
+  width: 150px;
+  padding: 20px;
+  background-color: yellow;
+}
+
+.cards{
+  display: block;
+}
+.card{
+  width: 400px;
+  padding: 12px;
+  background-color: yellow;
+}
+
+/* colorフォルダ */
