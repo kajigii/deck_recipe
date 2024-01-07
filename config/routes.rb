@@ -3,10 +3,15 @@ Rails.application.routes.draw do
   root to: "games#index"
 
   # ルーティングはすべてのビュー作成後に繋げる(モデル整理のため)
-  # ヴァンガードへのルートを設定
-  # get '/vanguard', to: 'vanguard#choose_rules', as: 'vanguard_path'
-  resources :vanguardes, only: [:index]
+  # ヴァンガードページのルートを設定
+  get '/vanguardes', to: 'vanguardes#index'
 
-  # バトスピへのルートを設定
-  get '/battle_spirits', to: 'battle_spirits#choose_color', as: 'battle_spirits_path'
+
+  # バトスピページのルートを設定
+  # ホームページからbattlespiritsページに遷移するルーティング
+  get '/battlespirits', to: 'battlespirits#index', as: 'game_battlespirits'
+  
+
+  # 色ごとのデッキ作成ページに遷移
+  get '/battlespirits/color', to: 'color#index', as:'battlespirits_color'
 end
