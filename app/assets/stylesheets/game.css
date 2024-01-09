@@ -46,6 +46,11 @@
   background-color: blue;
   display: flex;
   justify-content: flex-end;
+  list-style: none;
+}
+
+.right-header a{
+  text-decoration: none;
 }
 
 .colors{
@@ -118,4 +123,39 @@
   background-color: yellow;
 }
 
-/* colorフォルダ */
+/* redフォルダ */
+.total{
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+.post-btn-contents{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.form-submit {
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 50px;
+  height: 80px;
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.back-btn{
+  border: 1px solid #aaa;
+  text-decoration: none;
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 50px;
+  height: 80px;
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
