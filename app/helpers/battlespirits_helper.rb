@@ -1,0 +1,2 @@
+module BattlespiritsHelper
+end

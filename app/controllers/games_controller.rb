@@ -1,4 +1,4 @@
 class GamesController < ApplicationController
-  def index
+  def index #トップページを表示
   end
 end
