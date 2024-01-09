@@ -3,20 +3,26 @@
 <%# タイトルをクリックするとトップページに戻る %>
 <div class="header">
     デッキレシピ
+    <%# <h1 class="logo"><a href="index.html">APP FIRST</a></h1> %>
 </div>
 
 <%# カードゲーム選択 %>
 <div class="main">
   <%# ヴァンガード %>
-  <div class="game">
+  <ul class="game">
     <%# ヴァンガードのルール選択ページに遷移(vanguardフォルダのindex.html.erbへ)%>
     Vanguard
-  </div>
+    <%# <li class="game-list"><a href="service.html">SERVICE</a></li> %>
+  </ul>
+
   <%# バトスピ %>
-  <div class="game">
+  <ul class="game">
     <%# バトスピの色選択ページに遷移(battlespiritsフォルダのindex.html.erbへ)%>
-    Battle Spirits
-  </div>
+    <%# Battle Spirits %>
+    <li class="game-list"><a href="/battlespirits">Battle Spirits</a></li>
+  </ul>
+
+
 </div>
 
 

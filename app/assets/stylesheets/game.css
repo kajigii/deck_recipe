@@ -17,6 +17,11 @@
 
 .game{
   font-size: 80px;
+  list-style: none;
+}
+
+.game a{
+  text-decoration: none;
 }
 
 /* battlespiritsフォルダ */
@@ -54,8 +59,12 @@
 
 .color{
   font-size: 50px;
+  list-style: none;
 }
 
+.color a{
+  text-decoration: none;
+}
 
 /* battlespiritsフォルダのnewとshowとedit */
 
