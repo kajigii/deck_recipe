@@ -10,7 +10,20 @@
 
 <%# デッキ作成  cardを縦横2列にし「カード名：3枚」の形で保存、枚数はActiveHashで表記%>
 <div class="deckes">
-  <%#= form_with model: [], class: 'form', local: true do |f| %>
+  <%#= form_with model: [@card], class: 'form', local: true do |f| %>
+    <%# デッキ名を記入 %>
+    <div class="deck-name">
+      <div class="category">
+        デッキ名 
+      </div>
+      <div class="names">
+        <div class="name">
+          ストライク・アポロ合体デッキ
+          <%#= f.text_field :deck-name, class: 'form-detail', placeholder: 'デッキ名' %>
+        </div>
+      </div>
+    </div>
+
     <%# カテゴリの横にカード名を入力 %>
     <div class="deck">
       <div class="category">
@@ -23,14 +36,17 @@
         </div>
         <div class="card">
           アルティメット・ジークフリーデン:  3枚
+          <%#= f.text_field :ultimate2, class: 'form-detail', placeholder: 'アルティメット' %>
         </div>
       </div>
       <div class="cards">
         <div class="card">
           アルティメット・ジークヴルム・ノヴァ:  3枚
+          <%#= f.text_field :ultimate3, class: 'form-detail', placeholder: 'アルティメット' %>
         </div>
         <div class="card">
           アルティメット・ジークヴルム・ノヴァ:  3枚
+          <%#= f.text_field :ultimate4, class: 'form-detail', placeholder: 'アルティメット' %>
         </div>
       </div>
     </div>
@@ -38,22 +54,25 @@
     <div class="deck">
       <div class="category">
         スピリット
-        <%#= f.text_field :spirit1, class: 'form-detail', placeholder: 'スピリット' %>
       </div>
       <div class="cards">
         <div class="card">
           ゴラドン:  3枚
+          <%#= f.text_field :spirit1, class: 'form-detail', placeholder: 'スピリット' %>
         </div>
         <div class="card">
           ゴラドン:  3枚
+          <%#= f.text_field :spirit2, class: 'form-detail', placeholder: 'スピリット' %>
         </div>
       </div>
       <div class="cards">
         <div class="card">
           ゴラドン:  3枚
+          <%#= f.text_field :spirit3, class: 'form-detail', placeholder: 'スピリット' %>
         </div>
         <div class="card">
           ゴラドン:  3枚
+          <%#= f.text_field :spirit4, class: 'form-detail', placeholder: 'スピリット' %>
         </div>
       </div>
     </div>
@@ -61,22 +80,25 @@
     <div class="deck">
       <div class="category">
         ブレイブ
-      <%#= f.text_field :brave1, class: 'form-detail', placeholder: 'ブレイブ' %>
       </div>
       <div class="cards">
         <div class="card">
           フェニック・キャノン:  3枚
+          <%#= f.text_field :brave1, class: 'form-detail', placeholder: 'ブレイブ' %>
         </div>
         <div class="card">
           フェニック・キャノン:  3枚
+          <%#= f.text_field :brave2, class: 'form-detail', placeholder: 'ブレイブ' %>
         </div>
       </div>
       <div class="cards">
         <div class="card">
           フェニック・キャノン:  3枚
+          <%#= f.text_field :brave3, class: 'form-detail', placeholder: 'ブレイブ' %>
         </div>
         <div class="card">
           フェニック・キャノン:  3枚
+          <%#= f.text_field :brave4, class: 'form-detail', placeholder: 'ブレイブ' %>
         </div>
       </div>
     </div>
@@ -84,22 +106,25 @@
     <div class="deck">
       <div class="category">
         マジック
-      <%#= f.text_field :magic1, class: 'form-detail', placeholder: 'マジック' %>
       </div>
       <div class="cards">
         <div class="card">
           ダブルドロー:  3枚
+          <%#= f.text_field :magic1, class: 'form-detail', placeholder: 'マジック' %>
         </div>
         <div class="card">
           ダブルドロー:  3枚
+          <%#= f.text_field :magic2, class: 'form-detail', placeholder: 'マジック' %>
         </div>
       </div>
       <div class="cards">
         <div class="card">
           ダブルドロー:  3枚
+          <%#= f.text_field :magic3, class: 'form-detail', placeholder: 'マジック' %>
         </div>
         <div class="card">
           ダブルドロー:  3枚
+          <%#= f.text_field :magic4, class: 'form-detail', placeholder: 'マジック' %>
         </div>
       </div>
     </div>
@@ -107,22 +132,25 @@
     <div class="deck">
       <div class="category">
         ネクサス
-        <%#= f.text_field :nexus1, class: 'form-detail', placeholder: 'ネクサス' %>
       </div>
       <div class="cards">
         <div class="card">
           光の聖剣:  3枚
+          <%#= f.text_field :nexus1, class: 'form-detail', placeholder: 'ネクサス' %>
         </div>
         <div class="card">
           光の聖剣:  3枚
+          <%#= f.text_field :nexus2, class: 'form-detail', placeholder: 'ネクサス' %>
         </div>
       </div>
       <div class="cards">
         <div class="card">
           光の聖剣:  3枚
+          <%#= f.text_field :nexus3, class: 'form-detail', placeholder: 'ネクサス' %>
         </div>
         <div class="card">
           光の聖剣:  3枚
+          <%#= f.text_field :nexus4, class: 'form-detail', placeholder: 'ネクサス' %>
         </div>
       </div>
     </div>
