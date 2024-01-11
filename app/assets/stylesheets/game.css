@@ -95,11 +95,10 @@
 .deckes{
   height: 70%;
   width: 100%;
-  background-color: green;
+  /* background-color: green; */
 }
 
 .deck-name{
-  height: 100px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -109,24 +108,19 @@
 
 .category{
   width: 20%;
-  padding: 20px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .names{
   width: 80%;
   padding: 20px;
   display: block;
-  background-color: blue;
+  /* background-color: pink; */
 }
 
-.name{
-  /* padding: 15px; */
-  /* background-color: purple; */
-}
 
 .deck{
-  height: 100px;
+  height: 50%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -136,7 +130,7 @@
 .cards{
   width: 40%;
   display: block;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .card{
