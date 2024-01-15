@@ -13,4 +13,18 @@
   <div class="deck">
     ストライク・アポロ合体デッキ
   </div>
+  <div class="deck">
+    <div class="name">
+      <%= @red.deck_name %>
+    </div>
+    <div class= "more">
+      <!-- 投稿した内容を修正する -->
+      <ul class="more_list">
+        <li>
+          詳細
+          <%= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+        </li>
+      </ul>
+    </div>
+  </div>
 </div>

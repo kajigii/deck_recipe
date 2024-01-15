@@ -15,6 +15,7 @@ Rails.application.routes.draw do
   # 色ごとのデッキ作成ページに遷移
   get '/battlespirits/red', to: 'red#index', as:'battlespirits_red'
   resources :battlespirits, only: [:index] do
-    resources :red, only: [:index, :new, :create]
+    resources :red, only: [:index, :new, :create, :show]
   end
+  # battlespiritsとredのidを1に指定してルーティングを繋げている、battlespiritsがroom、redがwordとして考えればidを指定しなくても繋げられそう
 end
