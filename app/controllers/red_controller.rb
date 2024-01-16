@@ -23,6 +23,6 @@ class RedController < ApplicationController
 
   private
   def red_params
-    params.require(:red).permit(:deck_name, :ultimate1, :ultimate2, :ultimate3, :ultimate4, :spirit1, :spirit2, :spirit3, :spirit4, :brave1, :brave2, :brave3, :brave4, :magic1, :magic2, :magic3, :magic4, :nexus1, :nexus2, :nexus3, :nexus4)
+    params.require(:red).permit(:deck_name, :ultimate1, :ultimate2, :ultimate3, :ultimate4, :spirit1, :spirit2, :spirit3, :spirit4, :brave1, :brave2, :brave3, :brave4, :magic1, :magic2, :magic3, :magic4, :nexus1, :nexus2, :nexus3, :nexus4).merge(:battlespirits_id)
   end
 end

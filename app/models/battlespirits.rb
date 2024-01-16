@@ -1,0 +1,2 @@
+class Battlespirits < ApplicationRecord
+end
