@@ -1,2 +1,0 @@
-class Battlespirits < ApplicationRecord
-end

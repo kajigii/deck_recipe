@@ -3,14 +3,11 @@
   <div class="left-header">
     デッキレシピ
   </div>
-  <div class="right-header">
-    編集  戻る
-  </div>
 </div>
 
-<%# デッキ作成  cardを縦横2列にし「カード名：3枚」の形で保存%>
+<%# デッキ作成  cardを縦横2列にし「カード名：3枚」の形で保存、枚数はActiveHashで表記%>
 <div class="deckes">
-<%# カテゴリの横にカード名を入力 %>
+  <%# カテゴリの横にカード名を入力 %>
   <div class="deck">
     <div class="category">
       アルティメット  
@@ -18,106 +15,140 @@
     <div class="cards">
       <div class="card">
         アルティメット・ジークフリード:  3枚
+        <%#= f.text_field :ultimate1, class: 'form-detail', placeholder: 'アルティメット' %>
       </div>
       <div class="card">
         アルティメット・ジークフリーデン:  3枚
+        <%#= f.text_field :ultimate2, class: 'form-detail', placeholder: 'アルティメット' %>
       </div>
     </div>
     <div class="cards">
       <div class="card">
         アルティメット・ジークヴルム・ノヴァ:  3枚
+        <%#= f.text_field :ultimate3, class: 'form-detail', placeholder: 'アルティメット' %>
       </div>
       <div class="card">
-        アルティメット・ジークヴルム・ノヴァ:  3枚
-      </div>
-    </div>
-  </div>
-  
-  <div class="deck">
-    <div class="category">
-        スピリット
-    </div>
-    <div class="cards">
-      <div class="card">
-        ゴラドン:  3枚
-      </div>
-      <div class="card">
-        ゴラドン:  3枚
-      </div>
-    </div>
-    <div class="cards">
-      <div class="card">
-        ゴラドン:  3枚
-      </div>
-      <div class="card">
-        ゴラドン:  3枚
+        アルティメット・サジット・アポロ:  3枚
+        <%#= f.text_field :ultimate4, class: 'form-detail', placeholder: 'アルティメット' %>
       </div>
     </div>
   </div>
 
   <div class="deck">
     <div class="category">
-        ブレイブ
+      スピリット
     </div>
     <div class="cards">
       <div class="card">
-        フェニック・キャノン:  3枚
+        ゴラドン:  3枚
+        <%#= f.text_field :spirit1, class: 'form-detail', placeholder: 'スピリット' %>
       </div>
       <div class="card">
-        フェニック・キャノン:  3枚
+        ブレイドラ:  3枚
+        <%#= f.text_field :spirit2, class: 'form-detail', placeholder: 'スピリット' %>
       </div>
     </div>
     <div class="cards">
       <div class="card">
-        フェニック・キャノン:  3枚
+        リュザード:  3枚
+        <%#= f.text_field :spirit3, class: 'form-detail', placeholder: 'スピリット' %>
       </div>
       <div class="card">
-        フェニック・キャノン:  3枚
+        コレオン:  3枚
+        <%#= f.text_field :spirit4, class: 'form-detail', placeholder: 'スピリット' %>
       </div>
     </div>
   </div>
 
   <div class="deck">
     <div class="category">
-        マジック
+      ブレイブ
     </div>
     <div class="cards">
       <div class="card">
-        ダブルドロー:  3枚
+        フェニック・キャノン:  3枚
+        <%#= f.text_field :brave1, class: 'form-detail', placeholder: 'ブレイブ' %>
       </div>
       <div class="card">
-        ダブルドロー:  3枚
+        セイバー・シャーク:  3枚
+        <%#= f.text_field :brave2, class: 'form-detail', placeholder: 'ブレイブ' %>
       </div>
     </div>
     <div class="cards">
       <div class="card">
-        ダブルドロー:  3枚
+        赤魔人:  3枚
+        <%#= f.text_field :brave3, class: 'form-detail', placeholder: 'ブレイブ' %>
       </div>
       <div class="card">
-        ダブルドロー:  3枚
+        シャイニング・ソード:  3枚
+        <%#= f.text_field :brave4, class: 'form-detail', placeholder: 'ブレイブ' %>
       </div>
     </div>
   </div>
 
   <div class="deck">
     <div class="category">
-        ネクサス
+      マジック
     </div>
     <div class="cards">
       <div class="card">
-        光の聖剣:  3枚
+        ダブルドロー:  3枚
+        <%#= f.text_field :magic1, class: 'form-detail', placeholder: 'マジック' %>
       </div>
       <div class="card">
-        光の聖剣:  3枚
+        ブレイブドロー:  3枚
+        <%#= f.text_field :magic2, class: 'form-detail', placeholder: 'マジック' %>
       </div>
     </div>
     <div class="cards">
       <div class="card">
-        光の聖剣:  3枚
+        バーニング・サン:  3枚
+        <%#= f.text_field :magic3, class: 'form-detail', placeholder: 'マジック' %>
       </div>
       <div class="card">
-        光の聖剣:  3枚
+        レッド・ウォール:  3枚
+        <%#= f.text_field :magic4, class: 'form-detail', placeholder: 'マジック' %>
       </div>
     </div>
   </div>
+
+  <div class="deck">
+    <div class="category">
+      ネクサス
+    </div>
+    <div class="cards">
+      <div class="card">
+        光の聖剣:  3枚
+        <%#= f.text_field :nexus1, class: 'form-detail', placeholder: 'ネクサス' %>
+      </div>
+      <div class="card">
+        闇の聖剣:  3枚
+        <%#= f.text_field :nexus2, class: 'form-detail', placeholder: 'ネクサス' %>
+      </div>
+    </div>
+    <div class="cards">
+      <div class="card">
+        黄昏の暗黒銀河:  3枚
+        <%#= f.text_field :nexus3, class: 'form-detail', placeholder: 'ネクサス' %>
+      </div>
+      <div class="card">
+        創世神ダン:  3枚
+        <%#= f.text_field :nexus4, class: 'form-detail', placeholder: 'ネクサス' %>
+      </div>
+    </div>
+  </div>
+
+  <div class="total">
+    合計: 40枚
+  </div>
+  <div class="post-btn-contents">
+      <div class="form-submit">
+        編集
+        <%#= f.submit '保存', class: 'form-submit' %>
+      </div>
+      <div class="back-btn">
+        戻る
+        <%#=link_to 'もどる', battlespirits_red_path, class:"back-btn" %>
+      </div>
+    </div>
 </div>

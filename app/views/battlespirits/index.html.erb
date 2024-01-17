@@ -1,34 +1,151 @@
 <%# タイトルをクリックするとトップページに戻る %>
-<div class="header">
-  デッキレシピ
+<div class="deck-header">
+  <div class="left-header">
+    デッキレシピ
+  </div>
+  <div class="right-header">
+    <%= link_to "新規作成", new_battlespirit_path %>
+  </div>
 </div>
 
 <%# バトスピの色選択ページ 　css設定済%>
-<div class="colors">
-  <%# 色ごとのデッキ作成ページに遷移 %>
-  <ul class="color">
-    <%# battlespirits/redと出るのが理想 %>
-    <li class="color-list"><a href="/battlespirits/red">赤</a></li> 
-    <%#= link_to "赤", battlespiritse_reds_path(battlespiritse_id: @battlespirits.id) %>
-  </ul>
-  <%# 色ごとのデッキ作成ページに遷移 %>
-  <div class="color">
-    青
+<div class="mains">
+  <div class="main">
+    <div class="colors">
+      <%# 色ごとのデッキ作成ページに遷移 %>
+      <div class="color">
+        <div class="red">
+          赤
+        </div>
+        <div class="decks">
+          <div class="deck">
+            ストライク・アポロ合体デッキ
+            <%# if @color2 %>
+              <%# @battlespirits.deck_name %>
+            <%# end %>
+            
+          </div>
+          <!-- 投稿した内容を修正する -->
+          <ul class="more_list">
+            <li>
+              詳細
+              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="colors">
+      <%# 色ごとのデッキ作成ページに遷移 %>
+      <div class="color">
+        <div class="blue">
+          青
+        </div>
+        <div class="decks">
+          <%# <li class="color-list"><a href="/battlespirits/red">赤</a></li>  %>
+          <div class="deck">
+            ストライク・アポロ合体デッキ
+          </div>
+          <!-- 投稿した内容を修正する -->
+          <ul class="more_list">
+            <li>
+              詳細
+              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <%# 色ごとのデッキ作成ページに遷移 %>
-  <div class="color">
-    黄
+
+  <div class="main">
+    <div class="colors">
+      <%# 色ごとのデッキ作成ページに遷移 %>
+      <div class="color">
+        <div class="yellow">
+          黄
+        </div>
+        <div class="decks">
+          <%# <li class="color-list"><a href="/battlespirits/red">赤</a></li>  %>
+          <div class="deck">
+            ストライク・アポロ合体デッキ
+          </div>
+          <!-- 投稿した内容を修正する -->
+          <ul class="more_list">
+            <li>
+              詳細
+              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="colors">
+      <%# 色ごとのデッキ作成ページに遷移 %>
+      <div class="color">
+        <div class="green">
+          緑
+        </div>
+        <div class="decks">
+          <%# <li class="color-list"><a href="/battlespirits/red">赤</a></li>  %>
+          <div class="deck">
+            ストライク・アポロ合体デッキ
+          </div>
+          <!-- 投稿した内容を修正する -->
+          <ul class="more_list">
+            <li>
+              詳細
+              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <%# 色ごとのデッキ作成ページに遷移 %>
-  <div class="color">
-    緑
+
+  <div class="main">
+    <div class="colors">
+      <%# 色ごとのデッキ作成ページに遷移 %>
+      <div class="color">
+        <div class="white">
+          白
+        </div>
+        <div class="decks">
+          <%# <li class="color-list"><a href="/battlespirits/red">赤</a></li>  %>
+          <div class="deck">
+            ストライク・アポロ合体デッキ
+          </div>
+          <!-- 投稿した内容を修正する -->
+          <ul class="more_list">
+            <li>
+              詳細
+              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="colors">
+      <%# 色ごとのデッキ作成ページに遷移 %>
+      <div class="color">
+        <div class="purple">
+          紫
+        </div>
+        <div class="decks">
+          <%# <li class="color-list"><a href="/battlespirits/red">赤</a></li>  %>
+          <div class="deck">
+            ストライク・アポロ合体デッキ
+          </div>
+          <!-- 投稿した内容を修正する -->
+          <ul class="more_list">
+            <li>
+              詳細
+              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
-  <%# 色ごとのデッキ作成ページに遷移 %>
-  <div class="color">
-    白
-  </div>
-  <%# 色ごとのデッキ作成ページに遷移 %>
-  <div class="color">
-    紫
-  </div>
+  
 </div>
