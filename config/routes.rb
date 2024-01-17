@@ -11,12 +11,13 @@ Rails.application.routes.draw do
   # バトスピページのルートを設定
   # ホームページからbattlespiritsページに遷移するルーティング
   # get '/battlespirits', to: 'battlespirits#index', as: 'game_battlespirits'
-  
+  resources :battlespirits, only: [:index, :new, :create, :show]
 
   # 色ごとのデッキ作成ページに遷移
-  get '/battlespirits/red', to: 'red#index', as:'battlespirits_red'
-  resources :battlespirits, only: [:index] do
-    resources :red, only: [:index, :new, :create, :show]
-  end
+  # get '/battlespirits/red', to: 'red#index', as:'battlespirits_red'
+  # resources :battlespirits, only: [:index] do
+  #   resources :red, only: [:index, :new, :create, :show]
+  # end
+
   # battlespiritsとredのidを1に指定してルーティングを繋げている、battlespiritsがroom、redがwordとして考えればidを指定しなくても繋げられそう
 end
