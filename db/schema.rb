@@ -10,8 +10,8 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_07_080156) do
-  create_table "battlespiritses", charset: "utf8", force: :cascade do |t|
+ActiveRecord::Schema[7.0].define(version: 2024_01_18_080240) do
+  create_table "battlespirits", charset: "utf8", force: :cascade do |t|
     t.string "deck_name", null: false
     t.integer "color_id", null: false
     t.string "ultimate1"
@@ -34,11 +34,6 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_07_080156) do
     t.string "nexus2"
     t.string "nexus3"
     t.string "nexus4"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "games", charset: "utf8", force: :cascade do |t|
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
