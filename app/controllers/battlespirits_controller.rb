@@ -19,6 +19,23 @@ class BattlespiritsController < ApplicationController
   end
 
   def show
+    @battlespirits = Battlespirit.find(params[:id])
+  end
+
+  def edit
+    @battlespirits = Battlespirit.find(params[:id])
+  end
+
+  def update
+    battlespirits = Battlespirit.find(params[:id])
+    battlespirits.update(battlespirits_params)
+    redirect_to battlespirits_path
+  end
+
+  def destroy
+    battlespirits = Battlespirit.find(params[:id])
+    battlespirits.destroy
+    redirect_to battlespirits_path
   end
 
   private

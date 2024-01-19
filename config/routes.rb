@@ -11,7 +11,7 @@ Rails.application.routes.draw do
   # バトスピページのルートを設定
   # ホームページからbattlespiritsページに遷移するルーティング
   # get '/battlespirits', to: 'battlespirits#index', as: 'game_battlespirits'
-  resources :battlespirits, only: [:index, :new, :create, :show]
+  resources :battlespirits
 
   # 色ごとのデッキ作成ページに遷移
   # get '/battlespirits/red', to: 'red#index', as:'battlespirits_red'

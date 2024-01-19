@@ -18,18 +18,27 @@
           赤
         </div>
         <div class="decks">
-          <div class="deck">
-            <% @battlespirits.each do |battlespirit| %>
-              <%= battlespirit.deck_name if @color2 && battlespirit.color_id == 2 %>
-            <% end %>
-          </div>
-          <!-- 投稿した内容を修正する -->
-          <ul class="more_list">
-            <li>
-              詳細
-              <%#= link_to '詳細', battlespirit_path %>
-            </li>
-          </ul>
+          <!-- battlespirits リストの各要素に対して処理を行う -->
+          <% @battlespirits.each do |battlespirit| %>
+            <div class="deck_list">
+              <div class="deck">
+               <!-- 色が2の場合、デッキ名を表示 -->
+               <%= battlespirit.deck_name if battlespirit.color_id == 2 %>
+              </div>
+
+              <!-- 色が2の場合にのみ詳細へのリンクを表示 -->
+              <% if battlespirit.color_id == 2 %>
+                <div class= "more">
+                  <ul class="more_list">
+                    <li>
+                      <!-- battlespirit の詳細ページへのリンク -->
+                      <%= link_to '詳細', battlespirit_path(battlespirit.id) %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -40,19 +49,27 @@
           青
         </div>
         <div class="decks">
-          <div class="deck">
-            ストライク・アポロ合体デッキ
-            <% @battlespirits.each do |battlespirit| %>
-              <%= battlespirit.deck_name if @color3 && battlespirit.color_id == 3 %>
-            <% end %>
-          </div>
-          <!-- 投稿した内容を修正する -->
-          <ul class="more_list">
-            <li>
-              詳細
-              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
-            </li>
-          </ul>
+          <!-- battlespirits リストの各要素に対して処理を行う -->
+          <% @battlespirits.each do |battlespirit| %>
+            <div class="deck_list">
+              <div class="deck">
+                <!-- 色が2の場合、デッキ名を表示 -->
+                <%= battlespirit.deck_name if battlespirit.color_id == 3 %>
+              </div>
+
+              <!-- 色が3の場合にのみ詳細へのリンクを表示 -->
+              <% if battlespirit.color_id == 3 %>
+                <div class= "more">
+                  <ul class="more_list">
+                    <li>
+                      <!-- battlespirit の詳細ページへのリンク -->
+                      <%= link_to '詳細', battlespirit_path(battlespirit.id) %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -66,19 +83,27 @@
           黄
         </div>
         <div class="decks">
-          <div class="deck">
-            ストライク・アポロ合体デッキ
-            <% @battlespirits.each do |battlespirit| %>
-              <%= battlespirit.deck_name if @color4 && battlespirit.color_id == 4 %>
-            <% end %>
-          </div>
-          <!-- 投稿した内容を修正する -->
-          <ul class="more_list">
-            <li>
-              詳細
-              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
-            </li>
-          </ul>
+          <!-- battlespirits リストの各要素に対して処理を行う -->
+          <% @battlespirits.each do |battlespirit| %>
+            <div class="deck_list">
+              <div class="deck">
+                <!-- 色が4の場合、デッキ名を表示 -->
+                <%= battlespirit.deck_name if battlespirit.color_id == 4 %>
+              </div>
+
+              <!-- 色が4の場合にのみ詳細へのリンクを表示 -->
+              <% if battlespirit.color_id == 4 %>
+                <div class= "more">
+                  <ul class="more_list">
+                    <li>
+                      <!-- battlespirit の詳細ページへのリンク -->
+                      <%= link_to '詳細', battlespirit_path(battlespirit.id) %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -89,19 +114,27 @@
           緑
         </div>
         <div class="decks">
-          <div class="deck">
-            ストライク・アポロ合体デッキ
-            <% @battlespirits.each do |battlespirit| %>
-              <%= battlespirit.deck_name if @color5 && battlespirit.color_id == 5 %>
-            <% end %>
-          </div>
-          <!-- 投稿した内容を修正する -->
-          <ul class="more_list">
-            <li>
-              詳細
-              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
-            </li>
-          </ul>
+          <!-- battlespirits リストの各要素に対して処理を行う -->
+          <% @battlespirits.each do |battlespirit| %>
+            <div class="deck_list">
+              <div class="deck">
+                <!-- 色が5の場合、デッキ名を表示 -->
+                <%= battlespirit.deck_name if battlespirit.color_id == 5 %>
+              </div>
+
+              <!-- 色が5の場合にのみ詳細へのリンクを表示 -->
+              <% if battlespirit.color_id == 5 %>
+                <div class= "more">
+                  <ul class="more_list">
+                    <li>
+                      <!-- battlespirit の詳細ページへのリンク -->
+                      <%= link_to '詳細', battlespirit_path(battlespirit.id) %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -115,19 +148,27 @@
           白
         </div>
         <div class="decks">
-          <div class="deck">
-            ストライク・アポロ合体デッキ
-            <% @battlespirits.each do |battlespirit| %>
-              <%= battlespirit.deck_name if @color6 && battlespirit.color_id == 6 %>
-            <% end %>
-          </div>
-          <!-- 投稿した内容を修正する -->
-          <ul class="more_list">
-            <li>
-              詳細
-              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
-            </li>
-          </ul>
+          <!-- battlespirits リストの各要素に対して処理を行う -->
+          <% @battlespirits.each do |battlespirit| %>
+            <div class="deck_list">
+              <div class="deck">
+                <!-- 色が6の場合、デッキ名を表示 -->
+                <%= battlespirit.deck_name if battlespirit.color_id == 6 %>
+              </div>
+
+              <!-- 色が6の場合にのみ詳細へのリンクを表示 -->
+              <% if battlespirit.color_id == 6 %>
+                <div class= "more">
+                  <ul class="more_list">
+                    <li>
+                      <!-- battlespirit の詳細ページへのリンク -->
+                      <%= link_to '詳細', battlespirit_path(battlespirit.id) %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>
@@ -138,19 +179,27 @@
           紫
         </div>
         <div class="decks">
-          <div class="deck">
-            ストライク・アポロ合体デッキ
-            <% @battlespirits.each do |battlespirit| %>
-              <%= battlespirit.deck_name if @color7 && battlespirit.color_id == 7 %>
-            <% end %>
-          </div>
-          <!-- 投稿した内容を修正する -->
-          <ul class="more_list">
-            <li>
-              詳細
-              <%#= link_to '詳細', battlespirit_red_path(battlespirit_id: 1, id: 1) %>
-            </li>
-          </ul>
+          <!-- battlespirits リストの各要素に対して処理を行う -->
+          <% @battlespirits.each do |battlespirit| %>
+            <div class="deck_list">
+              <div class="deck">
+              <!-- 色が7の場合、デッキ名を表示 -->
+                <%= battlespirit.deck_name if battlespirit.color_id == 7 %>
+              </div>
+
+              <!-- 色が7の場合にのみ詳細へのリンクを表示 -->
+              <% if battlespirit.color_id == 7 %>
+                <div class= "more">
+                  <ul class="more_list">
+                    <li>
+                      <!-- battlespirit の詳細ページへのリンク -->
+                      <%= link_to '詳細', battlespirit_path(battlespirit.id) %>
+                    </li>
+                  </ul>
+                </div>
+              <% end %>
+            </div>
+          <% end %>
         </div>
       </div>
     </div>

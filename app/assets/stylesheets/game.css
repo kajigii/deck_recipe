@@ -44,6 +44,7 @@
 .right-header{
   padding-right: 10px;
   list-style: none;
+  /* display: flex; */
 }
 
 .right-header a{
@@ -51,9 +52,8 @@
 }
 
 .mains{
-  height: 80vh;
   width: 98vw;
-  background-color: whitesmoke;
+  background-color: pink;
 }
 
 .main{
@@ -111,10 +111,12 @@
 
 .decks{
   width: 100%;
+}
+
+.deck_list{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: lightpink;
 }
 
 .deck{
@@ -126,6 +128,8 @@
 .more_list{
   padding-right: 10px;
   list-style: none;
+  display: flex;
+  justify-content: space-around;
 }
 
 
@@ -133,34 +137,19 @@
 
 /* battlespiritsフォルダのnewとshowとedit */
 
-/* .deck-header{
-  height: 100px;
-  width: 100%;
-  font-size: 30px;
-  background-color: grey;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.left-header{
-  padding: 20px;
-  width: 50%;
-}
-
-.right-header{
-  padding: 20px;
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
-} */
-
 
 
 .deck-name{
-  width: 200%;
+  width: 100%;
   display: flex;
   align-items: center;
   background-color: blue;
+}
+
+.color_selection{
+  width: 40%;
+  font-size: 40px;
+  background-color: yellow;
 }
 
 .category{
@@ -172,11 +161,16 @@
   width: 80%;
   padding: 20px;
   display: block;
-  /* background-color: pink; */
+  background-color: pink;
 }
 
+.form-detail{
+  width: 300px;
+}
 
-
+.color-select{
+  width: 100px;
+}
 
 .cards{
   width: 40%;
@@ -213,6 +207,19 @@
 }
 
 .back-btn{
+  border: 1px solid #aaa;
+  text-decoration: none;
+  background-color: #38AEF0;
+  border: none;
+  color: white;
+  font-size: 50px;
+  height: 80px;
+  width: 50%;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.deck-blue-btn{
   border: 1px solid #aaa;
   text-decoration: none;
   background-color: #38AEF0;
