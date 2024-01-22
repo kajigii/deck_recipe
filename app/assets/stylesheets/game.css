@@ -149,17 +149,17 @@
 .color_selection{
   width: 40%;
   font-size: 40px;
+  padding: 20px 0;
   background-color: yellow;
 }
 
 .category{
   width: 20%;
-  /* background-color: yellow; */
 }
 
 .names{
   width: 80%;
-  padding: 20px;
+  padding: 20px 140px;
   display: block;
   background-color: pink;
 }
@@ -175,11 +175,31 @@
 .cards{
   width: 40%;
   display: block;
-  /* background-color: yellow; */
 }
 
 .card{
+  width: 175%;
+  display: flex;
+  justify-content: space-between;
   padding: 12px;
+  background-color: blue;
+}
+
+.column{
+  /* width: 120%; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: green;
+}
+
+.card-name{
+  background-color: yellow;
+}
+
+.card-count{
+  width: 60px;
+  /* background-color: white; */
 }
 
 /* redフォルダ */
