@@ -149,12 +149,22 @@
 .color_selection{
   width: 40%;
   font-size: 40px;
-  padding: 20px 0;
+  padding-top: 20px;
   background-color: yellow;
+}
+
+.color-select{
+  width: 100px;
+  margin-bottom: 25px;
 }
 
 .category{
   width: 20%;
+}
+
+.card-category{
+  width: 20%;
+  padding-top: 30px;
 }
 
 .names{
@@ -168,9 +178,11 @@
   width: 300px;
 }
 
-.color-select{
-  width: 100px;
+.count-detail{
+  width: 60px;
 }
+
+
 
 .cards{
   width: 40%;
@@ -198,8 +210,8 @@
 }
 
 .card-count{
-  width: 60px;
-  /* background-color: white; */
+  width: 100px;
+  background-color: white;
 }
 
 /* redフォルダ */

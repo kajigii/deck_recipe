@@ -1,27 +1,26 @@
 document.addEventListener('DOMContentLoaded', function() {
-  // 各セレクトボックスのクラスで要素を取得
-  var cardCountSelects = document.querySelectorAll('.card-count-select');
-
-  // 合計を表示する要素を取得
-  var totalDisplay = document.getElementById('total-display');
-
-  // 初期合計を計算して表示
-  updateTotal();
-
-  // セレクトボックスの変更イベントにリスナーを追加
-  cardCountSelects.forEach(function(select) {
-    select.addEventListener('change', updateTotal);
-  });
-
-  // 合計を計算して表示する関数
-  function updateTotal() {
+  // 各デッキごとの合計を更新する関数
+  function updateTotalCount() {
     var total = 0;
-    cardCountSelects.forEach(function(select) {
-      var value = parseInt(select.value, 10) || 0; // パースに失敗した場合は0を使用
-      total += value;
+
+    // 各デッキごとの合計を計算
+    ['ultimate', 'spirit', 'brave', 'magic', 'nexus'].forEach(function(deckType) {
+      for (var i = 1; i <= 2; i++) {
+        var count = parseInt(document.querySelector("input[name='" + deckType + i + "_count']").value) || 0;
+        total += count;
+      }
     });
 
-    // 合計を表示する
-    totalDisplay.textContent = '合計: ' + total + ' 枚';
+    // 合計を表示
+    document.getElementById('totalCount').textContent = total;
   }
+
+  // 各デッキごとの各カードの数が変更されたときに合計を更新する
+  ['ultimate', 'spirit', 'brave', 'magic', 'nexus'].forEach(function(deckType) {
+    for (var i = 1; i <= 2; i++) {
+      document.querySelector("input[name='" + deckType + i + "_count']").addEventListener('input', function() {
+        updateTotalCount();
+      });
+    }
+  });
 });
