@@ -27,7 +27,7 @@
 
     <%# カテゴリの横にカード名を入力 %>
     <div class="deck">
-      <div class="category">
+      <div class="card-category">
         アルティメット  
       </div>
       <div class="cards">
@@ -38,7 +38,7 @@
                 <%= f.text_field "ultimate#{i}", class: 'form-detail card-count-select', placeholder: 'アルティメット' %>
               </div>
               <div class="card-count">
-                :<%= f.select "ultimate#{i}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "ultimate#{i}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
             <div class="column">
@@ -46,7 +46,7 @@
                 <%= f.text_field "ultimate#{i+2}", class: 'form-detail card-count-select', placeholder: 'アルティメット' %>
               </div>
               <div class="card-count">
-                :<%= f.select "ultimate#{i+2}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "ultimate#{i+2}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
           </div>
@@ -56,7 +56,7 @@
 
 
     <div class="deck">
-      <div class="category">
+      <div class="card-category">
         スピリット
       </div>
       <div class="cards">
@@ -67,7 +67,7 @@
                 <%= f.text_field "spirit#{i}", class: 'form-detail card-count-select', placeholder: 'スピリット' %>
               </div>
               <div class="card-count">
-                :<%= f.select "spirit#{i}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "spirit#{i}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
             <div class="column">
@@ -75,7 +75,7 @@
                 <%= f.text_field "spirit#{i+2}", class: 'form-detail card-count-select', placeholder: 'スピリット' %>
               </div>
               <div class="card-count">
-                :<%= f.select "spirit#{i+2}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "spirit#{i+2}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
           </div>
@@ -84,7 +84,7 @@
     </div>
 
     <div class="deck">
-      <div class="category">
+      <div class="card-category">
         ブレイブ 
         <%# ブレイブは3~4枚がベストなバランスかも、スピリットの入力フォームを増やす必要がある %>
       </div>
@@ -96,7 +96,7 @@
                 <%= f.text_field "brave#{i}", class: 'form-detail card-count-select', placeholder: 'ブレイブ' %>
               </div>
               <div class="card-count">
-                :<%= f.select "brave#{i}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "brave#{i}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
             <div class="column">
@@ -104,7 +104,7 @@
                 <%= f.text_field "brave#{i+2}", class: 'form-detail card-count-select', placeholder: 'ブレイブ' %>
               </div>
               <div class="card-count">
-                :<%= f.select "brave#{i+2}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "brave#{i+2}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
           </div>
@@ -113,7 +113,7 @@
     </div>
 
     <div class="deck">
-      <div class="category">
+      <div class="card-category">
         マジック
       </div>
       <div class="cards">
@@ -124,7 +124,7 @@
                 <%= f.text_field "magic#{i}", class: 'form-detail card-count-select', placeholder: 'マジック' %>
               </div>
               <div class="card-count">
-                :<%= f.select "magic#{i}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "magic#{i}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
             <div class="column">
@@ -132,7 +132,7 @@
                 <%= f.text_field "magic#{i+2}", class: 'form-detail card-count-select', placeholder: 'マジック' %>
               </div>
               <div class="card-count">
-                :<%= f.select "magic#{i+2}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "magic#{i+2}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
           </div>
@@ -141,7 +141,7 @@
     </div>
 
     <div class="deck">
-      <div class="category">
+      <div class="card-category">
         ネクサス
       </div>
       <div class="cards">
@@ -152,7 +152,7 @@
                 <%= f.text_field "nexus#{i}", class: 'form-detail card-count-select', placeholder: 'ネクサス' %>
               </div>
               <div class="card-count">
-                :<%= f.select "nexus#{i}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "nexus#{i}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
             <div class="column">
@@ -160,7 +160,7 @@
                 <%= f.text_field "nexus#{i+2}", class: 'form-detail card-count-select', placeholder: 'ネクサス' %>
               </div>
               <div class="card-count">
-                :<%= f.select "nexus#{i+2}_count", options_for_select(CardCount.all.map { |cc| [cc.label, cc.id] }), {}, class: 'form-detail', style: 'width: 50px;' %>
+                :<%= f.text_field "nexus#{i+2}_count", class: 'count-detail ', placeholder: '半角数字' %>枚
               </div>
             </div>
           </div>
@@ -168,8 +168,8 @@
       </div>
     </div>
 
-    <div class="total" id="total-display">
-      合計: 0枚 <!-- 初期値は0としておく -->
+    <div id="totalDeckCount">
+      合計: <span id="totalCount">0</span> 枚
     </div>
 
     <div class="post-btn-contents">
