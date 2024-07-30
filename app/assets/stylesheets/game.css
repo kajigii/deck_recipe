@@ -53,7 +53,7 @@
 
 .mains{
   width: 98vw;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .main{
@@ -117,12 +117,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: grey;
 }
 
 .deck{
   display: flex;
   font-size: 20px;
-  background-color: red;
+  /* background-color: red; */
 }
 
 .more_list{
@@ -143,14 +144,14 @@
   width: 100%;
   display: flex;
   align-items: center;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .color_selection{
   width: 40%;
   font-size: 40px;
   padding-top: 20px;
-  background-color: yellow;
+  /* background-color: yellow; */
 }
 
 .color-select{
@@ -171,7 +172,7 @@
   width: 80%;
   padding: 20px 140px;
   display: block;
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .form-detail{
@@ -194,7 +195,7 @@
   display: flex;
   justify-content: space-between;
   padding: 12px;
-  background-color: blue;
+  /* background-color: blue; */
 }
 
 .column{
@@ -202,12 +203,10 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: green;
+  /* background-color: green; */
 }
 
-.card-name{
-  background-color: yellow;
-}
+
 
 .card-count{
   width: 100px;
