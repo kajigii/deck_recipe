@@ -34,6 +34,7 @@
         <% (1..2).each do |i| %>
           <div class="card">
             <div class="column">
+            <%# 枚数入力できるが、DBに反映されない　合計も反映されない %>
               <div class="card-name">
                 <%= f.text_field "ultimate#{i}", class: 'form-detail card-count-select', placeholder: 'アルティメット' %>
               </div>
