@@ -1,0 +1,2 @@
+module VanguardesHelper
+end

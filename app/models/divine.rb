@@ -1,0 +1,2 @@
+class Divine < ApplicationRecord
+end

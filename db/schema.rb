@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2024_01_18_080240) do
+ActiveRecord::Schema[7.0].define(version: 2024_08_11_035547) do
   create_table "battlespirits", charset: "utf8", force: :cascade do |t|
     t.string "deck_name", null: false
     t.integer "color_id", null: false
@@ -54,6 +54,27 @@ ActiveRecord::Schema[7.0].define(version: 2024_01_18_080240) do
     t.integer "nexus3_count"
     t.string "nexus4"
     t.integer "nexus4_count"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "divines", charset: "utf8", force: :cascade do |t|
+    t.string "deck_name", null: false
+    t.integer "world_id", null: false
+    t.string "grade3", null: false
+    t.string "grade2", null: false
+    t.string "grade1", null: false
+    t.string "grade0", null: false
+    t.string "card1"
+    t.string "card2"
+    t.string "card3"
+    t.string "card4"
+    t.string "card5"
+    t.string "card6"
+    t.string "card7"
+    t.string "card8"
+    t.string "card9"
+    t.string "card10"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

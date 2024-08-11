@@ -1,0 +1,2 @@
+class VanguardesController < ApplicationController
+end
