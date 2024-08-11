@@ -7,6 +7,10 @@ Rails.application.routes.draw do
   # ヴァンガードページのルートを設定
   get '/vanguardes', to: 'vanguardes#index'
 
+  # resources :Vanguard
+  # resources :Vanguard ギフト
+  # resources :Vanguard Dress
+  resources :divines
 
   # バトスピページのルートを設定
   # ホームページからbattlespiritsページに遷移するルーティング
